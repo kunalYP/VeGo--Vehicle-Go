@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Bootstrap CSS -->
-   
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -17,323 +17,931 @@
 <body>
     <header id="sidebar ">
         <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
-            <a class="w3-bar-item"  onclick="w3_close()">
+            <a class="w3-bar-item" onclick="w3_close()">
                 <i class="fa fa-window-close" style="float: right;" aria-hidden="true"></i></a>
-    
-            <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png" style="width:50px"
-                    alt=""> Hello User !</a>
+
+            <a href="userprofile.html" class="w3-bar-item " style="color:black"><img src="images/user.png"
+                    style="width:50px" alt=""> Hello User !</a>
             <div class="dropdown-divider" style="margin-top:20px"></div>
-            <a style="color:black" href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"
-                    style="margin-right: 1rem;"></i> Home</a>
+            <a style="color:black" href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"
+                    aria-hidden="true" style="margin-right: 1rem;"></i> Home</a>
             <!---<a href="#" class="w3-bar-item w3-button">Your Orders </a> !-->
-    
+
             <div class="dropdown-divider"></div>
-    
-            <a style="color:black" href="emergencyservice.html" class="w3-bar-item "><i class="fa fa-exclamation-triangle"
-                    aria-hidden="true" style="margin-right: 1rem;"></i> Emergency Service</a>
-            <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale" aria-hidden="true"
-                    style="margin-right: 1rem;"></i>Compare Vehicles</a>
-            <a style="color:black" href="nearbyshowrooms.html" class="w3-bar-item "> <i class="fa fa-car" aria-hidden="true"
-                    style="margin-right: 1rem;"></i> Nearby Showrooms & Shops</a>
-            <a style="color:black" href="nearbygarages.html" class="w3-bar-item "><i class="fa fa-cogs" aria-hidden="true"
-                    style="margin-right: 1rem;"></i> Nearby Garages & Workshops</a>
+
+            <a style="color:black" href="emergencyservice.html" class="w3-bar-item "><i
+                    class="fa fa-exclamation-triangle" aria-hidden="true" style="margin-right: 1rem;"></i> Emergency
+                Service</a>
+            <a style="color:black" href="vehcilecomparison.html" class="w3-bar-item "><i class="fa fa-balance-scale"
+                    aria-hidden="true" style="margin-right: 1rem;"></i>Compare Vehicles</a>
+            <a style="color:black" href="nearbyshowrooms.html" class="w3-bar-item "> <i class="fa fa-car"
+                    aria-hidden="true" style="margin-right: 1rem;"></i> Nearby Showrooms & Shops</a>
+            <a style="color:black" href="nearbygarages.html" class="w3-bar-item "><i class="fa fa-cogs"
+                    aria-hidden="true" style="margin-right: 1rem;"></i> Nearby Garages & Workshops</a>
             <div class="dropdown-divider"></div>
-            <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o" aria-hidden="true"
-                    style="margin-right: 1rem;"></i>Work With Us</a>
+            <a style="color:black" href="workwithus.html" class="w3-bar-item "><i class="fa fa-handshake-o"
+                    aria-hidden="true" style="margin-right: 1rem;"></i>Work With Us</a>
             <a style="color:black" href="aboutus.html" class="w3-bar-item ">
                 <img src="images/about us.png" style="width:18px;margin-right: 0.7rem;" alt="">
                 About Us</a>
-            <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square" aria-hidden="true"
-                    style="margin-right: 1rem;"></i> Contact Us</a>
+            <a style="color:black" href="contactus.html" class="w3-bar-item"><i class="fa fa-phone-square"
+                    aria-hidden="true" style="margin-right: 1rem;"></i> Contact Us</a>
             <div class="dropdown-divider"></div>
             <a style="color:black" href="login.html" class="w3-bar-item"><i class="fa fa-sign-in" aria-hidden="true"
                     style="margin-right: 1rem;"></i> Login/Sign Up</a>
-    
+
             <div class="dropdown-divider"></div>
-    
-    
-    
+
+
+
         </div>
     </header>
     <header id="mobilenavbar">
         <!-- Just an image -->
-        <nav class="navbar navbar-light bg-light">
-            <button onclick="w3_open()" aria-label="Toggle navigation" style="border:none;">
-
+        <nav class="navbar  navbar-light">
+            <button class="navbar-toggler menu-icon" type="button" data-toggle="collapse" aria-expanded="false"
+                onclick="w3_open()" aria-label="Toggle navigation" style="border:none;">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">
+
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" width="85" height="45" alt="">
             </a>
+
         </nav>
+
+
+
+
     </header>
 
-    <section id="selectvehiclemobile">
-        <div class="container-fluid heading">
-            <h4><span>Select Type Of Vehicle</span>  <span></span></h4>
+
+
+
+    <section class="registerform pt-3" id="form">
+
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;" class="pb-3">
+
+            <span class="step">1</span>
+            <span class="step">2</span>
+            <span class="step">3</span>
+            <span class="step">4</span>
 
         </div>
-        <div class="container text-center">
-            <div class="radio-tile-group">
-                <div class="row" id="vehiclerow">
-                    <div class="col" id="vehiclecol">
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio" />
-                            <div class="radio-tile">
-                                <img src="images/2wh.png" class="" alt="">
-                                <label for="bike" class="radio-tile-label">2 Wheeler</label>
+        <div class="tab">
+            <section id="selectvehiclemobile">
+                <div class="container-fluid heading">
+                    <h4><span>Select Type Of Vehicle</span> <span></span></h4>
+
+                </div>
+
+            </section>
+            <div class="services">
+                <h4><span>Select type Of </span>Vehicle</h4>
+            </div>
+            <div class="container text-center">
+                <div class="radio-tile-group">
+                    <div class="row" id="vehiclerow">
+                        <div class="col" id="vehiclecol">
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" name="radio" />
+                                <div class="radio-tile">
+                                    <img src="images/2wh.png" class="" alt="">
+                                    <label for="bike" class="radio-tile-label">2 Wheeler</label>
+                                </div>
                             </div>
+
+                        </div>
+                        <div class="col" id="vehiclecol">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio" />
+                                <div class="radio-tile">
+                                    <div class="icon car-icon">
+                                        <img src="images/3wh.png" class="" alt="">
+
+                                    </div>
+                                    <label for="drive" class="radio-tile-label">3 Wheeler</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="vehiclerow">
+                        <div class="col" id="vehiclecol">
+
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" name="radio" />
+                                <div class="radio-tile">
+                                    <div class="icon walk-icon">
+                                        <img src="images/4wh.png" />
+                                    </div>
+                                    <label for="walk" class="radio-tile-label">4 Wheeler</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col s2" id="vehiclecol">
+
+
+                            <div class="input-container">
+                                <input id="fly" class="radio-button" type="radio" name="radio" />
+                                <div class="radio-tile">
+                                    <div class="icon fly-icon">
+                                        <img src="images/4+wh.png" class="" alt="">
+                                    </div>
+
+                                    <label for="fly" class="radio-tile-label">Other</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <section id="locationbox">
+                <div class="services">
+                    <h4><span>Confirm Your </span>Location</h4>
+                </div>
+                <div class="container-fluid heading">
+                    <h4><span>Confirm Location</span> <span></span></h4>
+
+                </div>
+
+                <div class="container-fluid contactus">
+                    <div class="container">
+                        <div class="row" id="searchbox">
+                            <div class="searchbox">
+                                <button class="btn-menu btn-danger" style="height:62px;">
+                                    Auto Detect
+                                </button>
+                                <input id="search" type="text" placeholder="  Enter Your Location" name="search"
+                                    class="search">
+
+                            </div>
+                        </div>
+                        <div class="row" id="searchboxmobile">
+                            <div class="searchbox2">
+                                <button class="btn-menu">
+                                    <img src="images/address.png" style="width:50px" alt="">
+                                </button>
+                                <input id="search" type="text" placeholder="Search..." name="search" class="search">
+                                <button class="btn-search">
+                                    <img src="images/search bar.png" style="float:left;width:30px">
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="row" id="autodetect">
+                            <button class="btn btn-success btn-lg" type="submit"><i class="fa fa-check"
+                                    aria-hidden="true"></i>
+                                Auto Detect</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="tab">
+            <section id="selectvehiclemobile">
+                <div class="container-fluid heading">
+                    <h4><span>Select The Garage</span> <span></span></h4>
+
+                </div>
+
+            </section>
+
+            <section id="showroomscardsmobile">
+                <section id=" filteroption">
+                    <div style="float:left;font-weight:750;font-size:13px;margin-top:15px;margin-left:10px">
+                        <p>20 Garages Found
+                        <p>
+                    </div>
+                    <div class="alert alert-light" role="alert" style="float:right">
+                        <button onclick="w3_openfilter()" class="btn btn-outline-dark btn-sm" style="width:110%">
+                            filters <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    </div>
+
+                </section>
+
+                <header id="sidebar ">
+                    <div class="w3-sidebar w3-bar-block w3-animate-bottom fixed"
+                        style="display:none;z-index:5;width:100%;" id="filtersidebar">
+                        <button class="w3-bar-item w3-button w3-large" onclick="w3_closefilter()"><i
+                                class="fa fa-filter" aria-hidden="true"></i> Filters<i class="fa fa-window-close"
+                                style="float: right;" aria-hidden="true"></i></button>
+                        <div class="filters text-center">
+                            <button style="border-radius: 12px;margin-top:10px;margin-right:10px"
+                                class="btn btn-outline-dark btn-sm"> Sort By Ratings</button>
+                            <button style="border-radius: 12px;margin-top:10px;margin-right:10px"
+                                class="btn btn-outline-dark btn-sm"> Show only Authorized</button>
+
+                            <button style="border-radius: 12px;margin-top:10px" class="btn btn-outline-dark btn-sm">
+                                Sort By
+                                Distance From You</button>
+
                         </div>
 
                     </div>
-                    <div class="col" id="vehiclecol">
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio" />
-                            <div class="radio-tile">
-                                <div class="icon car-icon">
-                                    <img src="images/3wh.png" class=""  alt="">
+                </header>
+
+                <div class="servicesverticalcards">
+
+                    <div id="scrad" data-toggle="modal" data-target="#confirm" data-name="Garage 4">
+                        <div class="row" id="showroomscardsrow" style="border-bottom:none">
+
+                            <div class="col" id="simg">
+                                <img src="images/garage1 (1).jpg" alt="">
+                            </div>
+                            <div class="col" id="sinfo">
+                                <h3>Akshay Automobiles</h3>
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh
+                                    Colony , Purna , Dist Parbhani </p>
+                            </div>
+
+                        </div>
+                        <div class="row" id="showroomscardsrow2">
+
+
+                            <div class="col" id="sdist2">
+                                <p>2.5 KM
+                                </p>
+
+                            </div>
+                            <span id="bull">&#8226;</span>
+                            <div class="col" id="sstatus2">
+                                <p>Delievry Charge :
+                                    <b>50 ₹</b>
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div id="scrad" data-toggle="modal" data-target="#confirm" data-name="Garage 4">
+                        <div class="row" id="showroomscardsrow" style="border-bottom:none">
+
+                            <div class="col" id="simg">
+                                <img src="images/garage1 (2).jpg" alt="">
+                            </div>
+                            <div class="col" id="sinfo">
+                                <h3>Kunal da Garage</h3>
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh
+                                    Colony , Purna , Dist Parbhani </p>
+                            </div>
+
+                        </div>
+                        <div class="row" id="showroomscardsrow2">
+
+
+                            <div class="col" id="sdist2">
+                                <p>2.5 KM
+                                </p>
+
+                            </div>
+                            <span id="bull">&#8226;</span>
+                            <div class="col" id="sstatus2">
+                                <p>Delievry Charge :
+                                    <b>50 ₹</b>
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="scrad" data-toggle="modal" data-target="#confirm" data-name="Garage 4">
+                        <div class="row" id="showroomscardsrow" style="border-bottom:none">
+
+                            <div class="col" id="simg">
+                                <img src="images/garage1 (3).jpg" alt="">
+                            </div>
+                            <div class="col" id="sinfo">
+                                <h3>Billu da Garage</h3>
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh
+                                    Colony , Purna , Dist Parbhani </p>
+                            </div>
+
+                        </div>
+                        <div class="row" id="showroomscardsrow2">
+
+
+                            <div class="col" id="sdist2">
+                                <p>2.5 KM
+                                </p>
+
+                            </div>
+                            <span id="bull">&#8226;</span>
+                            <div class="col" id="sstatus2">
+                                <p>Delievry Charge :
+                                    <b>50 ₹</b>
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="scrad" data-toggle="modal" data-target="#confirm" data-name="Garage 4">
+                        <div class="row" id="showroomscardsrow" style="border-bottom:none">
+
+                            <div class="col" id="simg">
+                                <img src="images/garage1 (4).jpg" alt="">
+                            </div>
+                            <div class="col" id="sinfo">
+                                <h3>Akshay Auto Tvs Dealer</h3>
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh
+                                    Colony , Purna , Dist Parbhani </p>
+                            </div>
+
+                        </div>
+                        <div class="row" id="showroomscardsrow2">
+
+
+                            <div class="col" id="sdist2">
+                                <p>2.5 KM
+                                </p>
+
+                            </div>
+                            <span id="bull">&#8226;</span>
+                            <div class="col" id="sstatus2">
+                                <p>Delievry Charge :
+                                    <b>50 ₹</b>
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="scrad" data-toggle="modal" data-target="#confirm" data-name="Garage 4">
+                        <div class="row" id="showroomscardsrow" style="border-bottom:none">
+
+                            <div class="col" id="simg">
+                                <img src="images/showroom1.jpg" alt="">
+                            </div>
+                            <div class="col" id="sinfo">
+                                <h3>Akshay Auto Tvs Dealer</h3>
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Near Kunal Niwas , Adarsh
+                                    Colony , Purna , Dist Parbhani </p>
+                            </div>
+
+                        </div>
+                        <div class="row" id="showroomscardsrow2">
+
+
+                            <div class="col" id="sdist2">
+                                <p>2.5 KM
+                                </p>
+
+                            </div>
+                            <span id="bull">&#8226;</span>
+                            <div class="col" id="sstatus2">
+                                <p>Delievry Charge :
+                                    <b>50 ₹</b>
+                                </p>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </section>
+            <section id="garagecardsdesktop">
+
+
+                <div class="container-fluid services   hide">
+                    <h4><span>Select The</span> Garage</h4>
+                    <p>Just Click On The Garage</p>
+                    <div class=" d-flex justify-content-around kp">
+
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 1" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (2).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 1</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
 
                                 </div>
-                                <label for="drive" class="radio-tile-label">3 Wheeler</label>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 2" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (3).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 2</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 3" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (4).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 3</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 4" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (1).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 4</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class=" d-flex justify-content-around kp">
+
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 1" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (2).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 1</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 2" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (3).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 2</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 3" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (4).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 3</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 4" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (1).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 4</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class=" d-flex justify-content-around kp">
+
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 1" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (2).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 1</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 2" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (3).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 2</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 3" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (4).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 3</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="product" class="card-input-element" data-toggle="modal"
+                                data-target="#confirm" data-name="Garage 4" />
+
+                            <div class="card card-input" style="width: 18rem;">
+                                <div class="inner">
+                                    <img class="card-img-top" src="images/garage1 (1).jpg" alt="Card image cap"
+                                        style="width:100%;height:150px">
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Garage 4</h5>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <ul class="list-group list-group-flush pt-2">
+
+                                        <li class="list-group-item">Distance : <span class="distance">2.5 KM</span></li>
+                                        <li class="list-group-item">Delievery Charge : <span class="distance"
+                                                style="color:black">50 RS</span></li>
+
+                                        <li class="list-group-item">Near Kunal Niwas , New Adarsh Colony , Purna</li>
+                                        <a href="garageinfo.html">
+                                            <li class="list-group-item"><span class="distance">See Info <i
+                                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="confirm" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Confirm Garage</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <label for="" style="font-weight:500;">Continue With </label>
+                                <input type="text" id="name" style="border: none;font-weight:500;">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                                <button type="button" class="btn btn-primary" onclick="nextPrev(1)"
+                                    data-dismiss="modal">YES</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row" id="vehiclerow">
-                    <div class="col" id="vehiclecol">
+            </section>
+        </div>
+        <div class="tab">
+            <div class="preloaderBg" id="preloader" onload="preloader()">
+                <div class="preloader">
 
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio" />
-                            <div class="radio-tile">
-                                <div class="icon walk-icon">
-                                    <img src="images/4wh.png" 
-                                       />
-                                </div>
-                                <label for="walk" class="radio-tile-label">4 Wheeler</label>
-                            </div>
-                        </div>
+                    <img src="images/logo.png" alt="">
 
-                    </div>
-                    <div class="col s2" id="vehiclecol">
-
-
-                        <div class="input-container">
-                            <input id="fly" class="radio-button" type="radio" name="radio" />
-                            <div class="radio-tile">
-                                <div class="icon fly-icon">
-                                    <img src="images/4+wh.png" class=""  alt="">
-                                </div>
-
-                                <label for="fly" class="radio-tile-label">Other</label>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
+
+                <div class="preloader2"></div>
+            </div>
+            <h3 id="waitxtx">Wait , We are Connecting You With the Garage</h3>
+        </div>
+        <div style="overflow:auto;margin-top:10px">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn2" onclick="nextPrev(1)">Next</button>
             </div>
         </div>
 
     </section>
 
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
-                        <hr>
-                        <div class="form-group">
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have an Account ? Register
-                            </a>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google" aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-dark">Save changes</button>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Confirm Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin"
-                            style="width: 100%; margin-bottom: 10px;">Register</button>
-
-                        <div class="form-group">
-
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have an Account ? Sign
-                                In
-                            </a>
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google" aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-dark">Save changes</button>
-                </div> -->
-            </div>
-        </div>
-    </div>
-
-    <section id="selectvehicle">
-        <div class="services">
-            <h4><span>Select The Type Of Your </span> Vehicle</h4>
-            <p>Just Click On The Vehicle</p>
-        </div>
-        <div class="container">
-            <div class="radio-tile-group">
-
-                <div class="input-container">
-                    <input id="bike" class="radio-button" type="radio" name="radio" />
-                    <div class="radio-tile">
-                        <img src="images/2wh.png" class="" alt="" >
-                        <label for="bike" class="radio-tile-label">2 Wheeler</label>
-                    </div>
-                </div>
-
-                <div class="input-container">
-                    <input id="drive" class="radio-button" type="radio" name="radio" />
-                    <div class="radio-tile">
-                        <div class="icon car-icon">
-                            <img src="images/3wh.png" class="" alt="">
-
-                        </div>
-                        <label for="drive" class="radio-tile-label ">3 Wheeler</label>
-                    </div>
-                </div>
-                <div class="input-container">
-                    <input id="walk" class="radio-button" type="radio" name="radio" />
-                    <div class="radio-tile">
-                        <div class="icon walk-icon">
-                            <img src="images/4wh.png"  />
-                        </div>
-                        <label for="walk" class="radio-tile-label ">4 Wheeler</label>
-                    </div>
-                </div>
-
-                <div class="input-container">
-                    <input id="fly" class="radio-button" type="radio" name="radio" />
-                    <div class="radio-tile">
-                        <div class="icon fly-icon">
-                            <img src="images/4+wh.png" class=""  alt="">
-                        </div>
-
-                        <label for="fly" class="radio-tile-label">Other</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
-    <section id="locationbox">
-        <div class="services">
-            <h4><span>Confirm Your </span>Location</h4>
-        </div>
-        <div class="container-fluid heading">
-            <h4><span>Confirm Location</span> <span></span></h4>
-
-        </div>
-
-        <div class="container-fluid contactus">
-            <div class="container">
-                <div class="row" id="searchbox">
-                    <div class="searchbox">
-                        <button class="btn-menu btn-danger" style="height:62px;">
-                            Auto Detect
-                        </button>
-                        <input id="search" type="text" placeholder="  Enter Your Location" name="search" class="search">
-
-                    </div>
-                </div>
-                <div class="row" id="searchboxmobile">
-                    <div class="searchbox2">
-                        <button class="btn-menu">
-                            <img src="images/address.png" style="width:50px" alt="">
-                        </button>
-                        <input id="search" type="text" placeholder="Search..." name="search" class="search">
-                        <button class="btn-search">
-                            <img src="images/search bar.png" style="float:left;width:30px">
-                        </button>
-                    </div>
-
-                </div>
-
-                <div class="row" id="autodetect">
-                    <button class="btn btn-success btn-lg" type="submit"><i class="fa fa-check" aria-hidden="true"></i>
-                        Auto Detect</button>
-                </div>
 
 
-            </div>
-        </div>
 
-    </section>
-    <div class="submitbutton">
-        <a href="garagelist.html"> <button id="getlist" class="btn btn-primary btn-block submit mx-auto">Get Nearby
-                Garages</button></a>
-        <button id="next" class="btn btn-primary btn-block submit mx-auto">Next</button>
-    </div>
+
+
+
+
 
 
 
@@ -371,19 +979,104 @@
         $(".btn").click(function () {
             $(".input").val("");
         });
-        $("#locationbox").hide();
-        $("#getlist").hide();
-        $(document).ready(function () {
+        $('#confirm').on('show.bs.modal', function (e) {
+            var button = $(e.relatedTarget)
+            var id = button.data('name');
+            var modal = $(this)
+            modal.find('.modal-body #name').val(id);
 
-       
-            $("#next").click(function () {
-                $("#selectvehicle").hide();
-                $("#selectvehiclemobile").hide();
-                $("#next").hide();
-                $("#locationbox").show();
-                $("#getlist").show();
-            });
-        });
+
+        })
+
+
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+
+        function showTab(n) {
+            // This function will display the specified tab of the form...
+            var x = document.getElementsByClassName("tab");
+            x[n].style.display = "block";
+            //... and fix the Previous/Next buttons:
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            }
+            else if (n === 2) {
+                document.getElementById("prevBtn").style.margin = "20px";
+                document.getElementById("nextBtn2").style.display = "none";
+            }
+            else {
+                document.getElementById("prevBtn").style.display = "inline";
+                document.getElementById("nextBtn2").style.display = "inline";
+            }
+            if (n == (x.length - 2)) {
+                document.getElementById("nextBtn2").innerHTML = "Register";
+            } else if (n == (x.length - 1)) {
+                document.getElementById("prevBtn").style.display = "none";
+                document.getElementById("nextBtn2").style.display = "none";
+            }
+            else {
+                document.getElementById("nextBtn2").innerHTML = "Next";
+            }
+            //... and run a function that will display the correct step indicator:
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("tab");
+            // Exit the function if any field in the current tab is invalid:
+            // if (n == 1 && !validateForm()) return false;
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form...
+            if (currentTab >= x.length) {
+                // ... the form gets submitted:
+                document.getElementById("regForm").submit();
+                return false;
+            }
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("tab");
+            y = x[currentTab].getElementsByTagName("input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                    // add an "invalid" class to the field:
+                    y[i].className += " invalid";
+                    // and set the current valid status to false
+                    valid = false;
+                }
+            }
+            // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("step")[currentTab].className += " finish";
+            }
+            return valid; // return the valid status
+        }
+
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("step");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class on the current step:
+            x[n].className += " active";
+
+        }
+
+
+
     </script>
 </body>
 
