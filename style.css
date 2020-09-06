@@ -2523,6 +2523,12 @@ img {
     font-size: 1rem;
     font-weight:700;
   }
+  .sh-value-icon {
+    font-size: 3rem;
+  }
+  #fbid{
+    font-size:0.9rem;
+  }
 }
 
 /* outside media query*/
@@ -3134,6 +3140,9 @@ img {
   }
   .sh-value-text1 h5 {
     font-weight: 600;
+  }
+  .sh-value-icon {
+    font-size: 3rem;
   }
 }
 
