@@ -826,8 +826,8 @@ input:focus {
 }
 
 .garagecontact {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: linear-gradient(90deg, rgb(46, 46, 46), rgb(68, 68, 68));
   color: white;
 }
@@ -2521,13 +2521,19 @@ img {
   }
   #oname{
     font-size: 1rem;
-    font-weight:700;
+
   }
   .sh-value-icon {
     font-size: 3rem;
   }
   #fbid{
     font-size:0.9rem;
+  }
+  #scontact{
+    margin-top:3rem;
+  }
+  #sbout{
+    margin-top:2rem;
   }
 }
 
