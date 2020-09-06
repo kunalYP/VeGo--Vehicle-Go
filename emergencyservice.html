@@ -82,25 +82,15 @@
 
 
         <!-- Circles which indicates the steps of the form: -->
-        <div style="text-align:center;" class="pb-3">
+        <div style="text-align:center;" class="pb-3 pt-4">
 
-            <span class="step">1</span>
-            <span class="step">2</span>
-            <span class="step">3</span>
-            <span class="step">4</span>
+            <span class="step">Vehicle</span> -----
+            <span class="step">Location</span> -----
+            <span class="step">Garage</span>
+
 
         </div>
-        <div class="tab">
-            <section id="selectvehiclemobile">
-                <div class="container-fluid heading">
-                    <h4><span>Select Type Of Vehicle</span> <span></span></h4>
-
-                </div>
-
-            </section>
-            <div class="services">
-                <h4><span>Select type Of </span>Vehicle</h4>
-            </div>
+        <div class="tab pt-4">
             <div class="container text-center">
                 <div class="radio-tile-group">
                     <div class="row" id="vehiclerow">
@@ -162,38 +152,24 @@
         </div>
         <div class="tab">
             <section id="locationbox">
-                <div class="services">
-                    <h4><span>Confirm Your </span>Location</h4>
-                </div>
-                <div class="container-fluid heading">
-                    <h4><span>Confirm Location</span> <span></span></h4>
 
-                </div>
 
-                <div class="container-fluid contactus">
-                    <div class="container">
-                        <div class="row" id="searchbox">
-                            <div class="searchbox">
-                                <button class="btn-menu btn-danger" style="height:62px;">
-                                    Auto Detect
-                                </button>
-                                <input id="search" type="text" placeholder="  Enter Your Location" name="search"
-                                    class="search">
-
-                            </div>
-                        </div>
-                        <div class="row" id="searchboxmobile">
-                            <div class="searchbox2">
+                <div class="container-fluid pt-4">
+                    <div class="container pt-4">
+              
+                        <div class="row"  >
+                            <div class="searchbox2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                 <button class="btn-menu">
                                     <img src="images/address.png" style="width:50px" alt="">
                                 </button>
-                                <input id="search" type="text" placeholder="Search..." name="search" class="search">
+                                <input id="search" type="text" placeholder="Enter Location" name="search" class="search">
                                 <button class="btn-search">
                                     <img src="images/search bar.png" style="float:left;width:30px">
                                 </button>
                             </div>
 
                         </div>
+                       
 
                         <div class="row" id="autodetect">
                             <button class="btn btn-success btn-lg" type="submit"><i class="fa fa-check"
@@ -201,29 +177,23 @@
                                 Auto Detect</button>
                         </div>
                         <br>
-                        <div class="form-row pt-4">
-                            <iframe id="googlemap"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15073.234307308167!2d77.02138377450119!3d19.181720042435785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f853c6a83fbf800!2sPurna%20Junction!5e0!3m2!1sen!2sin!4v1597152317620!5m2!1sen!2sin"
-                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
-                        </div>
+                     
 
                     </div>
                 </div>
-
+                <div class="googlemap pt-3">
+                    <iframe id="googlemap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15073.234307308167!2d77.02138377450119!3d19.181720042435785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f853c6a83fbf800!2sPurna%20Junction!5e0!3m2!1sen!2sin!4v1597152317620!5m2!1sen!2sin"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
             </section>
         </div>
         <div class="tab">
-            <section id="selectvehiclemobile">
-                <div class="container-fluid heading">
-                    <h4><span>Select The Garage</span> <span></span></h4>
+           
 
-                </div>
-
-            </section>
-
-            <section id="showroomscardsmobile">
-                <section id=" filteroption">
+            <section id="showroomscardsmobile pt-4">
+                <section id="filteroption">
                     <div style="float:left;font-weight:750;font-size:13px;margin-top:15px;margin-left:10px">
                         <p>20 Garages Found
                         <p>
@@ -235,7 +205,7 @@
 
                 </section>
 
-                <header id="sidebar ">
+                <header id="sidebar">
                     <div class="w3-sidebar w3-bar-block w3-animate-bottom fixed"
                         style="display:none;z-index:5;width:100%;" id="filtersidebar">
                         <button class="w3-bar-item w3-button w3-large" onclick="w3_closefilter()"><i
@@ -477,9 +447,8 @@
             <section id="garagecardsdesktop">
 
 
-                <div class="container-fluid services   hide">
-                    <h4><span>Select The</span> Garage</h4>
-                    <p>Just Click On The Garage</p>
+                <div class="container-fluid services   hide pt-4">
+                 
                     <div class=" d-flex justify-content-around kp">
 
                         <label>
@@ -929,10 +898,11 @@
             </div>
             <h3 id="waitxtx">Wait , We are Connecting You With the Garage</h3>
         </div>
-        <div style="overflow:auto;margin-top:10px">
-            <div style="float:right;">
-                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn2" onclick="nextPrev(1)">Next</button>
+        <div>
+            <div class="text-center pt-3 pb-3">
+                <button type="button" id="nextBtn2" class="btn btn-block mx-auto" onclick="nextPrev(1)">Next</button>
+                <button type="button" id="prevBtn2" class="btn btn-block mx-auto"
+                    onclick="nextPrev(-1)">Previous</button>
             </div>
         </div>
 
@@ -1004,20 +974,20 @@
             x[n].style.display = "block";
             //... and fix the Previous/Next buttons:
             if (n == 0) {
-                document.getElementById("prevBtn").style.display = "none";
+                document.getElementById("prevBtn2").style.display = "none";
             }
             else if (n === 2) {
-                document.getElementById("prevBtn").style.margin = "20px";
+
                 document.getElementById("nextBtn2").style.display = "none";
             }
             else {
-                document.getElementById("prevBtn").style.display = "inline";
+                document.getElementById("prevBtn2").style.display = "inline";
                 document.getElementById("nextBtn2").style.display = "inline";
             }
             if (n == (x.length - 2)) {
                 document.getElementById("nextBtn2").innerHTML = "Register";
             } else if (n == (x.length - 1)) {
-                document.getElementById("prevBtn").style.display = "none";
+                document.getElementById("prevBtn2").style.display = "none";
                 document.getElementById("nextBtn2").style.display = "none";
             }
             else {
