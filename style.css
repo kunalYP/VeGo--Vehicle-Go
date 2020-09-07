@@ -2506,14 +2506,16 @@ img {
   }
   .sh-value-text2 p {
     font-size: 0.8rem;
+    margin:8px 0px 0px 0px;
   }
   .sh-value-img img {
     width: 35%;
     height: 3.6rem;
   }
   .sh-value-text1 h5 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 7px 0px 0px 0px;
+    font-size: 1rem;
   }
   #oname {
     font-size: 1rem;
@@ -3151,7 +3153,7 @@ img {
     width: 30%;
   }
   .sh-value-text1 h5 {
-    font-weight: 600;
+    font-weight: 500;
   }
   .sh-value-icon {
     font-size: 3rem;
