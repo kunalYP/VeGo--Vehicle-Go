@@ -18,7 +18,7 @@ html {
 html, body {
   font-size: 15px;
   line-height: 1.5;
-font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -2039,7 +2039,6 @@ img {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 780px) {
- 
   #corouselhomepage {
     display: none;
   }
@@ -2507,7 +2506,7 @@ img {
   }
   .sh-value-text2 p {
     font-size: 0.8rem;
-    margin:8px 0px 0px 0px;
+    margin: 8px 0px 0px 0px;
   }
   .sh-value-img img {
     width: 35%;
@@ -2742,10 +2741,10 @@ img {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 780px) {
-  #filteroption{
+  #filteroption {
     display: none;
   }
-  .servicesverticalcards{
+  .servicesverticalcards {
     display: none;
   }
   .start-header {
@@ -3904,7 +3903,6 @@ ul.thumb-Images li {
 #simg img {
   width: 100%;
   height: 114px;
-  
 }
 
 #sinfo {
@@ -3935,23 +3933,33 @@ ul.thumb-Images li {
 }
 
 #sstatus2 p {
-  color: green;
   font-size: 0.9rem;
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 0px -10px;
+  font-weight: 600;
 }
-
+#sstatus2 span{
+  font-weight: 800;
+  font-size: 0.7rem;
+  margin: 5px 0px 0px 0px;
+   color: rgba(179, 6, 6, 0.733);
+}
 #sdist p {
   font-weight: 800;
   font-size: 0.9rem;
   margin: 5px 0px 0px 16%;
 }
 
-#sdist2 p {
+#sdist2 span {
   font-weight: 800;
-  font-size: 0.9rem;
-  margin: 5px 0px 0px 50%;
+  font-size: 0.7rem;
+  margin: 5px 0px 0px 0px;
+  color: rgba(179, 6, 6, 0.733);
 }
-
+#sdist2 p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 5px 0px 0px 10px;
+}
 #bimg img {
   width: 80%;
   margin: 0px 0px 0px 10px;
@@ -4242,4 +4250,3 @@ ul.thumb-Images li {
   flex-wrap: wrap;
   margin: 0px 0px 0px 0px;
 }
-
