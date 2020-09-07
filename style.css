@@ -3934,7 +3934,7 @@ ul.thumb-Images li {
 
 #sstatus2 p {
   font-size: 0.9rem;
-  margin: 5px 0px 0px -10px;
+  margin: 5px 0px 0px -30px;
   font-weight: 600;
 }
 #sstatus2 span{
@@ -3958,7 +3958,7 @@ ul.thumb-Images li {
 #sdist2 p {
   font-weight: 600;
   font-size: 0.9rem;
-  margin: 5px 0px 0px 10px;
+  margin: 5px 0px 0px 0px;
 }
 #bimg img {
   width: 80%;
