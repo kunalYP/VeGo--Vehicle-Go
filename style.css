@@ -2532,6 +2532,10 @@ img {
   #sbout {
     margin-top: 2rem;
   }
+  
+.tab {
+  display: none;
+}
 }
 
 /* outside media query*/
@@ -2595,9 +2599,6 @@ img {
   width: 85%;
 }
 
-.tab {
-  display: none;
-}
 
 #row1 {
   padding-top: 30px;
