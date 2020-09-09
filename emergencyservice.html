@@ -92,6 +92,7 @@
         </div>
         <hr>
 
+        <form class="form-detail" action="#" method="post" id="regForm">
         <div class="tab">
 
             <div class="container">
@@ -166,29 +167,25 @@
                 <div class="container-fluid">
                     <div class="container">
                         <div class="row">
-                            <div class="searchbox2"
+                            <div class="eslbox"
                                 style="border:1px solid rgb(167, 146, 146);border-radius:5px;width:100%">
                                 <button class="btn-menu">
- 
+
                                 </button>
-                                <input id="search" type="text" placeholder="Enter Location" name="search"
+                                <input id="search" type="text" placeholder="Enter Your Location" name="search"
                                     class="search">
-                                <button class="btn  btn-search" style="background-color: #A60523;color:white;margin-top:-5px">
-                                  <p> <i class="fa fa-compass" aria-hidden="true" style="font-size:20px"></i><br>
-                                <span>Detect</span>
-                                </p>
+                                <button class="btn  btn-search" style="background-color:  #A60523;">
+                                    <p> <i class="fa fa-compass" aria-hidden="true" style="font-size:20px"></i><br>
+                                        <span>Detect</span>
+                                    </p>
 
                                 </button>
                             </div>
 
                         </div>
 
-<!-- 
-                        <div class="row" id="autodetect">
-                            <button class="btn btn-success btn-lg" type="submit"><i class="fa fa-check"
-                                    aria-hidden="true"></i>
-                                Auto Detect</button>
-                        </div> -->
+                  
+                     
                         <br>
 
 
@@ -201,9 +198,7 @@
                 </div>
             </section>
         </div>
-        <div class="tab pb-4">
-
-
+        <div class="tab pb-4 pt-4">
             <section id="showroomscardsmobile " style="margin-top:-40px">
                 <section id="filteroption">
                     <div style="float:left;font-weight:750;font-size:13px;margin-top:15px;margin-left:10px">
@@ -921,7 +916,7 @@
             <button type="button" id="nextBtn2" class="btn btn-block mx-auto" onclick="nextPrev(1)">Next</button>
             <button type="button" id="prevBtn2" class="btn btn-block mx-auto" onclick="nextPrev(-1)">Previous</button>
         </div>
-        </div>
+       </form>
 
     </section>
 
@@ -992,15 +987,13 @@
             //... and fix the Previous/Next buttons:
             if (n == 0) {
                 document.getElementById("prevBtn2").style.display = "none";
-            }
-            else {
+            } else {
                 document.getElementById("prevBtn2").style.display = "inline";
-                document.getElementById("nextBtn2").style.display = "inline";
             }
             if (n == (x.length - 1)) {
-                document.getElementById("nextBtn2").innerHTML = "Submit";
-            }
-            else {
+                document.getElementById("nextBtn2").innerHTML = "Send Mechanic";
+  
+            } else {
                 document.getElementById("nextBtn2").innerHTML = "Next";
             }
             //... and run a function that will display the correct step indicator:
@@ -1060,6 +1053,8 @@
             x[n].className += " active";
 
         }
+
+
 
 
 
