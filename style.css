@@ -5414,3 +5414,8 @@ ul.thumb-Images li {
 .emtab {
   display: none;
 }
+#offersh img{
+  width:90%;
+  height:170px;
+  border-radius: 10px;
+}
