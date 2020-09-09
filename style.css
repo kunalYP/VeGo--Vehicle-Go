@@ -2545,7 +2545,6 @@ Primary style
 Main Components 
 
 -------------------------------- */
- 
   .cd-products-comparison-table {
     margin-bottom: 6em;
   }
@@ -3045,10 +3044,6 @@ No JS
   .no-js .cd-products-columns .check {
     display: none;
   }
-
-
-
-
   #comparevehiclesdesktop {
     display: none;
   }
@@ -3088,7 +3083,6 @@ No JS
     width: 65%;
     font-size: 15px;
     border: none;
- 
   }
   #productdesktop h3 {
     font-size: 0.9rem;
@@ -5415,4 +5409,8 @@ ul.thumb-Images li {
   border: none;
   cursor: pointer;
   padding-top: 10px;
+}
+
+.emtab {
+  display: none;
 }
