@@ -2039,6 +2039,22 @@ img {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 780px) {
+  .cu-det-icon1 i{
+    margin-right: 0.6rem;
+    color: #A60523;
+    border: 3px solid rgb(253, 253, 253);
+    box-shadow: 1px 1px 6px rgb(236, 236, 236);
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 0.8rem;
+    margin-top: -0.2rem;
+  }
+  .about-us-img img {
+ 
+    width: 100%;
+    height: 15rem;
+   
+  }
   #corouselhomepage {
     display: none;
   }
@@ -3296,6 +3312,16 @@ No JS
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 780px) {
+  .cu-det-icon1 i{
+    margin:1rem 5rem 1rem 5rem;
+    color: #A60523;
+    border: 3px solid rgb(253, 253, 253);
+    box-shadow: 1px 1px 6px rgb(236, 236, 236);
+    border-radius: 50%;
+    font-size: 60px;
+    padding: 0.8rem;
+    
+  }
   #filteroption {
     display: none;
   }
@@ -3713,6 +3739,11 @@ No JS
   .sh-value-icon {
     font-size: 3rem;
   }
+  .about-us-img img {
+    height: 32rem;
+    width: 100%;
+   
+} 
   /* -------------------------------- 
 
 Primary style
@@ -5418,4 +5449,12 @@ ul.thumb-Images li {
   width:90%;
   height:170px;
   border-radius: 10px;
+}
+
+.alert{
+  margin:0px 0px 0px 0px;;
+}
+.cu-detail-item{
+  display: flex;
+  margin: 0.6rem;
 }
