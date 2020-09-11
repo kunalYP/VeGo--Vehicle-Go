@@ -5511,3 +5511,8 @@ ul.thumb-Images li {
   font-weight:550;
   margin:20px 0px 20px 10px;
 }
+#commentscs{
+  height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
