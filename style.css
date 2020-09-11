@@ -2517,14 +2517,16 @@ img {
     width: 46%;
     text-align: center;
     margin: 2%;
+    border: 1px solid rgb(235, 232, 232);
   }
   .sh-value-text2 p {
     font-size: 0.8rem;
-    margin: 8px 0px 0px 0px;
+    margin: 8px 0px 8px 0px;
   }
   .sh-value-img img {
     width: 35%;
     height: 3.6rem;
+    margin-top:10px;
   }
   .sh-value-text1 h5 {
     font-weight: 500;
@@ -5577,11 +5579,3 @@ ul.thumb-Images li {
   color: #A60523;
 }
 
-#garageadressowner{
-  width:100%;
-  margin:10px 0px 10px 0px;
-}
-#garageadresscol2 p{
-  font-size:0.9rem;
-  margin:10px 0px 10px 6px;
-}
