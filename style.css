@@ -5501,14 +5501,13 @@ ul.thumb-Images li {
   font-weight: 700;
 }
 #seeallveh{
-  margin:20px 0px 0px 0px;
+  margin:20px 0px 30px 0px;
   border-top: 2px solid rgb(235, 232, 232);
-
   border-bottom: 2px solid rgb(235, 232, 232);
-  box-shadow: 2px 2px 2px rgb(232, 240, 241);
+  height:4rem;
 }
 #seeallvehcol h5{
   font-size: 1rem;
   font-weight:550;
-  margin:15px 0px 15px 10px;
+  margin:20px 0px 20px 10px;
 }
