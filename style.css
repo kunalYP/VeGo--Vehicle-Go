@@ -4884,9 +4884,9 @@ ul.thumb-Images li {
 }
 
 #subjectadd {
-  background-color: #1d0e11;
+  background-color: #A60523;
   color: white;
-  padding: 12px 20px;
+  padding: 10px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -5016,9 +5016,9 @@ ul.thumb-Images li {
 }
 
 #crtacc {
-  background-color: #9e0303;
+  background-color: #A60523;
   color: white;
-  padding: 12px 20px;
+  padding: 6px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -5499,4 +5499,16 @@ ul.thumb-Images li {
   font-size: 12px;
   margin:-1rem 0px 10px 0px;
   font-weight: 700;
+}
+#seeallveh{
+  margin:20px 0px 0px 0px;
+  border-top: 2px solid rgb(235, 232, 232);
+
+  border-bottom: 2px solid rgb(235, 232, 232);
+  box-shadow: 2px 2px 2px rgb(232, 240, 241);
+}
+#seeallvehcol h5{
+  font-size: 1rem;
+  font-weight:550;
+  margin:15px 0px 15px 10px;
 }
