@@ -5530,7 +5530,7 @@ ul.thumb-Images li {
 }
 
 #commentscs::-webkit-scrollbar-thumb {
-  background-color: #A60523;
+  background-color:black;
 }
 
 #garageservices{
@@ -5586,6 +5586,7 @@ ul.thumb-Images li {
 .caroffer{
   margin:5px 0px 0px 0px;
   padding:0px 0px 0px 0px;
+  border-bottom:1px solid rgb(235, 232, 232);
 }
 .caroffer p{
   margin:0px 0px 0px 0px;
@@ -5594,4 +5595,3 @@ ul.thumb-Images li {
   font-size:0.8rem;
   font-weight:700;
 }
-
