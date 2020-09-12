@@ -4694,7 +4694,7 @@ No JS
   border-top: none;
   border-bottom: 2px solid rgb(235, 232, 232);
   box-shadow: 2px 2px 2px rgb(232, 240, 241);
-  background-color: rgb(235, 232, 232);
+
   padding-top:10px;
   padding-bottom:10px;
 }
@@ -4705,7 +4705,7 @@ No JS
 
 #customerrev h3 {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0px 0px 0px 0px;
 }
 
@@ -5582,4 +5582,16 @@ ul.thumb-Images li {
   margin:10px 0px 0px 0px;
   color: #A60523;
 }
+
+.caroffer{
+  background-color: black;
+  margin:5px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+.caroffer p{
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  color:white;
+}
+
 
