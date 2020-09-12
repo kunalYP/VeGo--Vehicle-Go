@@ -4691,10 +4691,12 @@ No JS
 
 #review {
   margin-bottom: 10px;
-  border-top: 2px solid rgb(235, 232, 232);
-  margin-top: 6px;
+  border-top: none;
+ 
   border-bottom: 2px solid rgb(235, 232, 232);
   box-shadow: 2px 2px 2px rgb(232, 240, 241);
+  background-color: rgb(235, 232, 232);
+  padding-top:10px;
 }
 
 #customerrev {
@@ -5507,6 +5509,8 @@ ul.thumb-Images li {
   border-top: 2px solid rgb(235, 232, 232);
   border-bottom: 2px solid rgb(235, 232, 232);
   height:4rem;
+  background-color: #A60523;
+  color:white;
 }
 #seeallvehcol h5{
   font-size: 1rem;
