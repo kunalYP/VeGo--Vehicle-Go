@@ -5584,14 +5584,14 @@ ul.thumb-Images li {
 }
 
 .caroffer{
-  background-color: black;
   margin:5px 0px 0px 0px;
   padding:0px 0px 0px 0px;
 }
 .caroffer p{
   margin:0px 0px 0px 0px;
   padding:0px 0px 0px 0px;
-  color:white;
+  color:green;
+  font-size:0.8rem;
+  font-weight:700;
 }
-
 
