@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   border: 0;
   border-top: 1px solid #eee;
-
 }
 
 #corouselhomepage {
@@ -2039,6 +2038,87 @@ img {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 780px) {
+  #garageservices {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  #garageservicescol {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(235, 232, 232);
+    width: 33.3%;
+  }
+  
+  #garageservicescol img {
+    width: 60%;
+    height: 3.5rem;
+    margin: 10px 0px 0px 0px;
+  }
+  
+  #garageservicescol h5 {
+    font-size: 0.9rem;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  #garagesowner {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  #garagesownercol {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(235, 232, 232);
+    width: 33.3%;
+  }
+  
+  #garagesownercol img {
+    width: 40%;
+    height: 60px;
+    margin: 10px 0px 0px 0px;
+  }
+  
+  #garagesownercol h5 {
+    font-size: 0.9rem;
+    margin: 10px 0px 10px 0px;
+    font-weight: 700;
+  }
+  
+  #garagesownercol p {
+    font-size: 0.94rem;
+  }
+  
+  #garagesownercol i {
+    font-size: 2.2rem;
+    margin: 10px 0px 0px 0px;
+    color: #A60523;
+  }
+  #showroomowner {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  #showroomownercol {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(235, 232, 232);
+    width: 33.3%;
+  }
+  #showroomownercol img {
+    width: 40%;
+    height: 60px;
+    margin: 10px 0px 0px 0px;
+  }
+  #showroomownercol h5 {
+    font-size:0.92rem;
+    margin: 10px 0px 10px 0px;
+    font-weight: 700;
+  }
+  #showroomownercol p {
+    font-size: 0.94rem;
+  }
+  #showroomownercol i {
+    font-size: 2.2rem;
+    margin: 10px 0px 0px 0px;
+    color: #A60523;
+  }
   .cu-det-icon1 i {
     margin-right: 0.6rem;
     color: #A60523;
@@ -2526,7 +2606,7 @@ img {
   .sh-value-img img {
     width: 35%;
     height: 3.6rem;
-    margin-top:10px;
+    margin-top: 10px;
   }
   .sh-value-text1 h5 {
     font-weight: 500;
@@ -3312,6 +3392,88 @@ No JS
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 780px) {
+  #garageservices {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  #garageservicescol {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(235, 232, 232);
+    width: 33.3%;
+  }
+  
+  #garageservicescol img {
+    width: 30%;
+    height: 6.5rem;
+    margin: 10px 0px 0px 0px;
+  }
+  
+  #garageservicescol h5 {
+    font-size: 1.2rem;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  #garagesowner {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  #garagesownercol {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(235, 232, 232);
+    width: 33.3%;
+  }
+  
+  #garagesownercol img {
+    width: 20%;
+    height: 6.5rem;
+    margin: 10px 0px 0px 0px;
+  }
+  
+  #garagesownercol h5 {
+    font-size: 1.3rem;
+    margin: 10px 0px 10px 0px;
+    font-weight: 700;
+  }
+  
+  #garagesownercol p {
+    font-size: 1.3rem;
+    margin-top:10px;
+  }
+  
+  #garagesownercol i {
+    font-size: 2.2rem;
+    margin: 10px 0px 0px 0px;
+    color: #A60523;
+  }
+  #showroomowner {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  #showroomownercol {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(235, 232, 232);
+    width: 33.3%;
+  }
+  #showroomownercol img {
+    width: 20%;
+    height: 120px;
+    margin: 10px 0px 0px 0px;
+  }
+  #showroomownercol h5 {
+    font-size: 1.2rem;
+    margin: 10px 0px 10px 0px;
+    font-weight: 700;
+  }
+  #showroomownercol p {
+    font-size: 1rem;
+  }
+  #showroomownercol i {
+    font-size: 2.2rem;
+    margin: 10px 0px 0px 0px;
+    color: #A60523;
+  }
   .cu-det-icon1 i {
     margin: 1rem 5rem 1rem 5rem;
     color: #A60523;
@@ -4694,9 +4856,8 @@ No JS
   border-top: none;
   border-bottom: 2px solid rgb(235, 232, 232);
   box-shadow: 2px 2px 2px rgb(232, 240, 241);
-
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #customerrev {
@@ -5469,13 +5630,10 @@ ul.thumb-Images li {
 }
 
 .item-veh-spec {
-  height: 5.7rem;
-  width: 5.5rem;
-  margin-right: 1px;
-  margin-bottom: 1.5rem;
-  margin-left: 5px;
+  height: 6.7rem;
+  width: 6.5rem;
+  margin:10px 10px 10px 10px;
   background-color: #ffffff;
-  margin-left: 1px;
   border: 1px solid rgb(236, 236, 236);
   box-shadow: 2px 2px 12px rgb(218, 216, 216);
   border-bottom: 2px solid #A60523;
@@ -5490,101 +5648,73 @@ ul.thumb-Images li {
 }
 
 .vehspec-icon img {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .vehspec-txt p {
-  margin: 5px 0px 20px 0px;
-  font-size: 12px;
+  margin: 15px 0px 20px 0px;
+  font-size: 13px;
 }
 
 .vehspec-txt2 p {
-  font-size: 12px;
-  margin:-1rem 0px 10px 0px;
-  font-weight: 700;
+  font-size: 13px;
+  margin: -1rem 0px 10px 0px;
+  font-weight: 750;
 }
-#seeallveh{
-  margin:20px 0px 30px 0px;
+
+#seeallveh {
+  margin: 20px 0px 30px 0px;
   border-top: 2px solid rgb(235, 232, 232);
   border-bottom: 2px solid rgb(235, 232, 232);
-  height:4rem;
+  height: 4rem;
   background-color: #A60523;
-  color:white;
+  color: white;
 }
-#seeallvehcol h5{
+
+#seeallvehcol h5 {
   font-size: 1rem;
-  font-weight:550;
-  margin:20px 0px 20px 10px;
+  font-weight: 550;
+  margin: 20px 0px 20px 10px;
 }
-#commentscs{
+
+#commentscs {
   height: 300px;
   overflow: scroll;
   overflow-x: hidden;
 }
 
-
 #commentscs::-webkit-scrollbar {
   width: 3px;
-
- 
 }
 
 #commentscs::-webkit-scrollbar-thumb {
-  background-color:black;
+  background-color: black;
 }
 
-#garageservices{
-  width:100%;
-  margin:0px 0px 0px 0px;
-  
+#spec-show{
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #050714;
+  box-shadow: 1px 1px 7px rgb(248, 248, 248);
+  text-align: start;
+  color:white;
+  margin-top:20px;
 }
-#garageservicescol{
-  margin:0px 0px 0px 0px;
-  border: 1px solid rgb(235, 232, 232);
-  width:33.3%;
+.spec-tab{
+  overflow: scroll;
+  height: 25rem;
 }
-#garageservicescol img{
-  width:60%;
-  height:3.5rem;
-  margin:10px 0px 0px 0px;
+#spec-show2{
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #A60523;
+  box-shadow: 1px 1px 7px rgb(248, 248, 248);
+  text-align: start;
+  color:white;
+  margin-top:0px;
 }
-#garageservicescol h5{
-
-  font-size:0.9rem;
-  margin:10px 0px 10px 0px;
- 
-}
-
-
-
-#garagesowner{
-  width:100%;
-  margin:0px 0px 0px 0px;
-}
-#garagesownercol{
-  margin:0px 0px 0px 0px;
-  border: 1px solid rgb(235, 232, 232);
-  width:33.3%;
-}
-#garagesownercol img{
-  width:60%;
-  height:3.5rem;
-  margin:10px 0px 0px 0px;
-}
-#garagesownercol h5{
-
-  font-size:0.9rem;
-  margin:10px 0px 10px 0px;
- font-weight:700;
-}
-#garagesownercol p{
-
-  font-size:0.94rem;
-}
-#garagesownercol i{
-  font-size: 2.2rem;
-  margin:10px 0px 0px 0px;
-  color: #A60523;
-}
-
