@@ -5526,6 +5526,7 @@ ul.thumb-Images li {
 
 #commentscs::-webkit-scrollbar {
   width: 3px;
+
  
 }
 
@@ -5575,7 +5576,7 @@ ul.thumb-Images li {
 
   font-size:0.9rem;
   margin:10px 0px 10px 0px;
- 
+ font-weight:700;
 }
 #garagesownercol i{
   font-size: 2.2rem;
@@ -5583,15 +5584,3 @@ ul.thumb-Images li {
   color: #A60523;
 }
 
-.caroffer{
-  margin:5px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-  border-bottom:1px solid rgb(235, 232, 232);
-}
-.caroffer p{
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-  color:green;
-  font-size:0.8rem;
-  font-weight:700;
-}
