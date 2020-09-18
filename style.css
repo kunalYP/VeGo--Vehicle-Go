@@ -2042,51 +2042,42 @@ img {
     width: 100%;
     margin: 0px 0px 0px 0px;
   }
-  
   #garageservicescol {
     margin: 0px 0px 0px 0px;
     border: 1px solid rgb(235, 232, 232);
     width: 33.3%;
   }
-  
   #garageservicescol img {
     width: 60%;
     height: 3.5rem;
     margin: 10px 0px 0px 0px;
   }
-  
   #garageservicescol h5 {
     font-size: 0.9rem;
     margin: 10px 0px 10px 0px;
   }
-  
   #garagesowner {
     width: 100%;
     margin: 0px 0px 0px 0px;
   }
-  
   #garagesownercol {
     margin: 0px 0px 0px 0px;
     border: 1px solid rgb(235, 232, 232);
     width: 33.3%;
   }
-  
   #garagesownercol img {
     width: 40%;
     height: 60px;
     margin: 10px 0px 0px 0px;
   }
-  
   #garagesownercol h5 {
     font-size: 0.9rem;
     margin: 10px 0px 10px 0px;
     font-weight: 700;
   }
-  
   #garagesownercol p {
     font-size: 0.94rem;
   }
-  
   #garagesownercol i {
     font-size: 2.2rem;
     margin: 10px 0px 0px 0px;
@@ -2107,7 +2098,7 @@ img {
     margin: 10px 0px 0px 0px;
   }
   #showroomownercol h5 {
-    font-size:0.92rem;
+    font-size: 0.92rem;
     margin: 10px 0px 10px 0px;
     font-weight: 700;
   }
@@ -3396,52 +3387,43 @@ No JS
     width: 100%;
     margin: 0px 0px 0px 0px;
   }
-  
   #garageservicescol {
     margin: 0px 0px 0px 0px;
     border: 1px solid rgb(235, 232, 232);
     width: 33.3%;
   }
-  
   #garageservicescol img {
     width: 30%;
     height: 6.5rem;
     margin: 10px 0px 0px 0px;
   }
-  
   #garageservicescol h5 {
     font-size: 1.2rem;
     margin: 10px 0px 10px 0px;
   }
-  
   #garagesowner {
     width: 100%;
     margin: 0px 0px 0px 0px;
   }
-  
   #garagesownercol {
     margin: 0px 0px 0px 0px;
     border: 1px solid rgb(235, 232, 232);
     width: 33.3%;
   }
-  
   #garagesownercol img {
     width: 20%;
     height: 6.5rem;
     margin: 10px 0px 0px 0px;
   }
-  
   #garagesownercol h5 {
     font-size: 1.3rem;
     margin: 10px 0px 10px 0px;
     font-weight: 700;
   }
-  
   #garagesownercol p {
     font-size: 1.3rem;
-    margin-top:10px;
+    margin-top: 10px;
   }
-  
   #garagesownercol i {
     font-size: 2.2rem;
     margin: 10px 0px 0px 0px;
@@ -5632,7 +5614,7 @@ ul.thumb-Images li {
 .item-veh-spec {
   height: 6.7rem;
   width: 6.5rem;
-  margin:10px 1.4% 10px 1.4%;
+  margin: 10px 1.4% 10px 1.4%;
   background-color: #ffffff;
   border: 1px solid rgb(236, 236, 236);
   box-shadow: 2px 2px 12px rgb(218, 216, 216);
@@ -5692,53 +5674,182 @@ ul.thumb-Images li {
   background-color: black;
 }
 
-#spec-show{
+#spec-show {
   width: 100%;
   margin-left: 0;
   margin-bottom: 1rem;
   background-color: #050714;
   text-align: start;
-  color:white;
-  margin-top:20px;
-  padding-top:16px;
-  padding-bottom:16px;
+  color: white;
+  margin-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.spec-tab{
+
+.spec-tab {
   overflow: scroll;
   height: 25rem;
 }
-#spec-show2{
+
+#spec-show2 {
   width: 100%;
   margin-left: 0;
   margin-bottom: 1rem;
- padding-top:16px;
-  padding-bottom:16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #A60523;
-
   text-align: start;
-  color:white;
-  margin-top:0px;
+  color: white;
+  margin-top: 0px;
 }
-#spec-comp{
+
+#spec-comp {
   width: 100%;
   margin-left: 0;
   margin-bottom: 1rem;
- padding-top:16px;
-  padding-bottom:16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #050714;
-
   text-align: start;
+  color: white;
+  margin-top: 0px;
+}
+
+#vd {
+  margin: 0px 5px 0px 5px;
+  padding: 0px 0px 0px 0px;
+}
+
+#vd iframe {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* compare vehicles new style */
+
+
+
+.vehdata tr {
+  border: 2px solid grey;
+}
+
+.vehdata-tab tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.vehdata-tab tr:nth-child(even) {
+  background-color: white;
+}
+
+.tab-head th {
+  font-size: 1.3rem;
+  background-color: #ebebeb;
+}
+
+.side-tab {
+  min-height: 3rem;
+  display: flex;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.side-tab-1 {
+  display: flex;
+  overflow-x: scroll;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.stick-veh {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.vehdata-tab th {
+  position: sticky;
+  left: 0;
+}
+
+.vehdata-tab1 th {
+  position: sticky;
+  left: 0;
+}
+
+
+.tab-btn{
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 15px;
+  border: none;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 2px solid #181515;
+}
+.tab-btn2{
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 15px;
+  border: none;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #A60523;
   color:white;
-  margin-top:0px;
 }
-#vd{
-  margin:0px 5px 0px 5px;
-  padding:0px 0px 0px 0px;
+
+/* table */
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top:10px;
+  margin-bottom: 20px;
 }
-#vd iframe{
-   width:100%;
-   height:100px;
-   border-radius: 5px;
-   margin:0px 0px 0px 0px;
-   padding:0px 0px 0px 0px;
+
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #A60523;
+  color: white;
+  border:none;
+}
+
+
+
+#customers td {
+  height: 70px;
+}
+
+#srno {
+  text-align: center;
+  width:10px;
+}
+
+#priceser {
+  text-align: center;
 }

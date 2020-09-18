@@ -10,8 +10,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Vego - Nearby Showrooms</title>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+
+    <link rel="stylesheet" href="style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <title>Vego - Compare Vehicles </title>
 </head>
 <header id="sidebar ">
     <div class="w3-sidebar w3-bar-block w3-animate-left " style="display:none;z-index:5;width:80%;" id="mySidebar">
@@ -54,162 +59,10 @@
     </div>
 </header>
 
-<style>
-    /*custom font*/
-    @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-    /*basic reset*/
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        height: 100%;
-        /*Image only BG fallback*/
-
-        /*background = gradient + image pattern combo*/
-        background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
-    }
-
-    body {
-        font-family: montserrat, arial, verdana;
-    }
-
-    /*form styles*/
-    #msform {
-        width: 400px;
-        margin: 50px auto;
-        text-align: center;
-        position: relative;
-    }
-
-    #msform fieldset {
-        background: white;
-        border: 0 none;
-        border-radius: 3px;
-        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-        padding: 20px 30px;
-        box-sizing: border-box;
-        width: 80%;
-        margin: 0 10%;
-
-        /*stacking fieldsets above each other*/
-        position: relative;
-    }
-
-    /*Hide all except first fieldset*/
-    #msform fieldset:not(:first-of-type) {
-        display: none;
-    }
-
-    /*inputs*/
-    #msform input,
-    #msform textarea {
-        padding: 15px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        width: 100%;
-        box-sizing: border-box;
-        font-family: montserrat;
-        color: #2c3e50;
-        font-size: 13px;
-    }
-
-    /*buttons*/
-    #msform .action-button {
-        width: 100px;
-        background: #27ae60;
-        font-weight: bold;
-        color: white;
-        border: 0 none;
-        border-radius: 1px;
-        cursor: pointer;
-        padding: 10px 5px;
-        margin: 10px 5px;
-    }
-
-    #msform .action-button:hover,
-    #msform .action-button:focus {
-        box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
-    }
-
-    /*headings*/
-    .fs-title {
-        font-size: 15px;
-        text-transform: uppercase;
-        color: #2c3e50;
-        margin-bottom: 10px;
-    }
-
-    .fs-subtitle {
-        font-weight: normal;
-        font-size: 13px;
-        color: #666;
-        margin-bottom: 20px;
-    }
-
-    /*progressbar*/
-    #progressbar {
-        margin-bottom: 30px;
-        overflow: hidden;
-        /*CSS counters to number the steps*/
-        counter-reset: step;
-    }
-
-    #progressbar li {
-        list-style-type: none;
-        color: white;
-        text-transform: uppercase;
-        font-size: 9px;
-        width: 33.33%;
-        float: left;
-        position: relative;
-    }
-
-    #progressbar li:before {
-        content: counter(step);
-        counter-increment: step;
-        width: 20px;
-        line-height: 20px;
-        display: block;
-        font-size: 10px;
-        color: #333;
-        background: white;
-        border-radius: 3px;
-        margin: 0 auto 5px auto;
-    }
-
-    /*progressbar connectors*/
-    #progressbar li:after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: white;
-        position: absolute;
-        left: -50%;
-        top: 9px;
-        z-index: -1;
-        /*put it behind the numbers*/
-    }
-
-    #progressbar li:first-child:after {
-        /*connector not needed before the first step*/
-        content: none;
-    }
-
-    /*marking active/completed steps green*/
-    /*The number of the step and the connector before it = green*/
-    #progressbar li.active:before,
-    #progressbar li.active:after {
-        background: #27ae60;
-        color: white;
-    }
-</style>
-
 <body>
-    
+
+
+
     <header id="mobilenavbar">
         <!-- Just an image -->
         <nav class="navbar  navbar-light">
@@ -223,21 +76,7 @@
             </a>
 
         </nav>
-        <div class="container sticky-top" id="myHeader">
 
-            <div id="search">
-                <div class="fixedsearchbox">
-                    <button class="btn-menu">
-                        <img src="images/search bar.png" alt="" style="float:left;width:30px">
-                    </button>
-                    <input id="fixedsearch" type="text" placeholder="Search For Garage, Showroom or Location"
-                        class="search">
-                </div>
-            </div>
-
-
-
-        </div>
 
         <section id="ownerlocation">
             <div class="alert" role="alert" data-toggle="modal" data-target="#locationmodal">
@@ -249,302 +88,826 @@
 
     </header>
 
+    <section id="comparevehiclesdesktop">
+        <div class="container-fluid services pt-4">
+            <h4><span>Compare Multiple</span> Vehicles <span></span></h4>
+            <p> We cater an array of high-end products for Education and Government Sector </p>
+        </div>
 
-    <!-- multistep form -->
-    <form id="msform">
-        <!-- progressbar -->
-        <ul id="progressbar">
-            <li class="active">Account Setup</li>
-            <li>Social Profiles</li>
-            <li>Personal Details</li>
-        </ul>
-        <!-- fieldsets -->
-        <fieldset>
-            <h2 class="fs-title">Create your account</h2>
-            <h3 class="fs-subtitle">This is step 1</h3>
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="pass" placeholder="Password" />
-            <input type="password" name="cpass" placeholder="Confirm Password" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-        <fieldset>
-            <h2 class="fs-title">Social Profiles</h2>
-            <h3 class="fs-subtitle">Your presence on the social network</h3>
-            <input type="text" name="twitter" placeholder="Twitter" />
-            <input type="text" name="facebook" placeholder="Facebook" />
-            <input type="text" name="gplus" placeholder="Google Plus" />
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-        <fieldset>
-            <h2 class="fs-title">Personal Details</h2>
-            <h3 class="fs-subtitle">We will never sell it</h3>
-            <input type="text" name="fname" placeholder="First Name" />
-            <input type="text" name="lname" placeholder="Last Name" />
-            <input type="text" name="phone" placeholder="Phone" />
-            <textarea name="address" placeholder="Address"></textarea>
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="submit" name="submit" class="submit action-button" value="Submit" />
-        </fieldset>
-    </form>
-
-
-
-
-
-
-
-
-    <section id="mobilefooter">
-        <footer class="mobilefooter" style="position: relative;">
-            <p class="footer-item mx-auto">© 2020-2021 VeGO</p>
-            <a style="margin: auto;" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-
-        </footer>
     </section>
 
+    <div class="container heading pt-4" id="comparevehiclesmobile">
 
+        <div class="comparearea">
+            <div class="row comparebox">
+                <div class="col circle1 text-center">
+                    <div data-toggle="modal" data-target="#addvehiclemodel">
+
+                        <i class="fa fa-plus-square-o addvehicle" aria-hidden="true"></i>
+                        <p>Add Vehicle</p>
+                    </div> <!-- .top-info -->
+                </div>
+
+                <span><img src="images/vs.png" style="width:20px;margin-top:180%" alt=""></span>
+
+                <div class="col circle2 text-center">
+                    <div data-toggle="modal" data-target="#addvehiclemodel">
+
+                        <i class="fa fa-plus-square-o addvehicle" aria-hidden="true"></i>
+                        <p>Add Vehicle</p>
+                    </div> <!-- .top-info -->
+                </div>
+            </div>
+        </div>
+        <div class="comparebuttondiv">
+            <button class=" btn  btn-block comparebutton">Compare Now</button>
+        </div>
+    </div>
+
+    <section class=" bg-info text-center pb-4" id="comparevehiclesdesktop">
+        <br>
+        <div class="container-fluid ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" id="cmpveh">
+                            <div class="features-icons-icon">
+                                <img src="images/vehicle1.png" width="090px" alt="">
+                            </div>
+                            <input class="form-control form-control-lg" type="text" placeholder="Select Brand"><br>
+                            <input class="form-control form-control-lg " type="text" placeholder="Select Model"><br>
+                            <input class="form-control form-control-lg" type="text" placeholder="Select Variant">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" id="cmpveh">
+                            <div class="features-icons-icon">
+                                <img src="images/vehicle2.png" width="090px" alt="">
+
+                            </div>
+                            <input class="form-control form-control-lg" type="text" placeholder="Select Brand"><br>
+                            <input class="form-control form-control-lg " type="text" placeholder="Select Model"><br>
+                            <input class="form-control form-control-lg" type="text" placeholder="Select Variant">
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" id="cmpveh">
+                            <div class="features-icons-icon">
+                                <img src="images/vehicle3.png" width="090px" alt="">
+                            </div>
+                            <input class="form-control form-control-lg" type="text" placeholder="Select Brand"><br>
+                            <input class="form-control form-control-lg " type="text" placeholder="Select Model"><br>
+                            <input class="form-control form-control-lg" type="text" placeholder="Select Variant">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section>
+        <div class="stick-veh">
+            <table class="vehdata-tab1">
+                <tr>
+                    <td><img src="images/car1.png" alt=""></td>
+                    <td><img src="images/car3.png" alt=""></td>
+                    <td><img src="images/car1.png" alt=""></td>
+
+                </tr>
+                <tr>
+                    <th>Audi A3</th>
+                    <th>Audi A6</th>
+                    <th>Audi A3</th>
+
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div class="comp-veh-cont">
+
+            <div id="table-cont-veh">
+
+                <div id="crit-1" class="city w3-animate-top">
+                    <table class="vehdata-tab">
+                       
+
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Yellow</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div id="crit-2" class="city w3-animate-top p-1" style="display:none">
+                    <table class="vehdata-tab">
+                     
+
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Yellow</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div id="crit-3" class="city w3-animate-top p-1" style="display:none">
+                    <table class="vehdata-tab">
+                    
+
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Yellow</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div id="crit-4" class="city w3-animate-top p-1" style="display:none">
+                    <table class="vehdata-tab">
+                   
+
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Yellow</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div id="crit-5" class="city w3-animate-top p-1" style="display:none">
+                    <table class="vehdata-tab">
+               
+
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Color</th>
+                        </tr>
+                        <tr>
+                            <td>Yellow</td>
+                            <td>Red</td>
+                            <td>Yellow</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+                        <tr>
+                            <td>7,50,000</td>
+                            <td>9,80,000</td>
+                            <td>7,50,000</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Mileage(kmpl)</th>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>22</td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="2">Price(Rs)</th>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="side-tab  p-2 fixed-bottom">
+            <div class="side-tab-1">
+                <span class=" tablink tab-btn" onclick="openLink(event, 'crit-1')">Basic</span>
+                <span class=" tablink tab-btn" onclick="openLink(event, 'crit-2')">Engine</span>
+                <span class=" tablink tab-btn" onclick="openLink(event, 'crit-3')">Dimension</span>
+                <span class=" tablink tab-btn" onclick="openLink(event, 'crit-4')">Capacity</span>
+                <span class=" tablink tab-btn" onclick="openLink(event, 'crit-5')">Tyre</span>
+            </div>
+        </div>
+    </section>
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade bd-example-modal-sm" id="addvehiclemodel" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <h5 class="modal-title" id="exampleModalLabel"><b>Add Vehicle</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin" style="width: 100%;">Sign In</button>
-                        <hr>
-                        <div class="form-group">
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Don't Have
-                                an Account ? Register
-                            </a>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
+                    <form action="">
+                        <input class="form-control form-control-lg" type="text" placeholder="Select Brand"><br>
+                        <input class="form-control form-control-lg " type="text" placeholder="Select Model"><br>
+                        <input class="form-control form-control-lg" type="text" placeholder="Select Variant">
 
                     </form>
                 </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Vehicle</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Mobile Number">
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Confirm Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-dark btn-signin"
-                            style="width: 100%; margin-bottom: 10px;">Register</button>
-
-                        <div class="form-group">
-
-                            <a href="" style="color:black" data-toggle="modal" data-target="#exampleModal2">Already Have
-                                an Account ? Sign
-                                In
-                            </a>
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google"
-                                aria-hidden="true"></i>
-                            Sign In with Google</button>
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i> Sign In with Facebook </button>
-
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Save changes</button>
-                    </div> -->
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <footer class="footer text-muted" id="bigfooter">
-
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-lg-5 mt-3">
-
-            <!-- Grid row -->
-            <div class="row mt-3 dark-grey-text justify-content-between">
-
-                <!-- Grid column -->
-                <div class="col-md-12 col-lg-2 col-xl-2 mb-4 pr-xl-2">
-
-                    <!-- Content -->
-                    <a href="index.html" class="text-uppercase font-weight-bold"> <img src="images/logo.png"
-                            class="img-fluid" style="width:170px;" /></a>
-
-                    <p style="margin-top:16px;">Leading Organization That Provides All Type Of Automobile Services.
-                    </p>
-
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 pl-xl-5">
-
-                    <!-- Links -->
-                    <div class="pl-xl-3">
-                        <h6 class="text-uppercase ">Useful Links</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <a class="dark-grey-text" href="index.html">Home</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="registergarage.html">Add garage</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="registershowroom.html">Add Showroom</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#">Contact Us
-                            </a>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 pl-xl-5">
-                    <div class="pl-xl-2">
-                        <!-- Links -->
-                        <h6 class="text-uppercase ">Services</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <a class="dark-grey-text" href="emergencyservice.html">Emeregency Service</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="nearbyshowrooms.html">Nearby Showrooms & Shops</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="vehcilecomparison.html">Compare Vehicles</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="nearbygarages.html">Nearby Garages & Workshops</a>
-                        </p>
-
-
-                    </div>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 pl-xl-0">
-
-                    <!-- Links -->
-                    <h6 class="text-uppercase ">Owner</h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a class="dark-grey-text" href="">Kunal Y. Pandharkar</a>
-                    </p>
-                    <p>
-                        <a class="dark-grey-text" href="">Adarsh Colony</a>
-                    </p>
-                    <p>
-                        <a class="dark-grey-text" href="">Purna</a>
-                    </p>
-                    <p>
-                        <a class="dark-grey-text" href="">Dist.Parbhani</a>
-                    </p>
-
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-md-0 mb-4 pl-xl-5 contact pr-0">
-
-                    <!-- Links -->
-                    <h6 class="text-uppercase">Contact</h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fa fa-home mr-1"></i> Purna
-                    </p>
-                    <p class="contactp">
-                        <i class="fa fa-envelope mr-2"></i> workwithvego@gmail.com
-                    </p>
-                    <p>
-                        <i class="fa fa-phone fa-flip-horizontal mr-1"></i> +91 7774843561
-                    </p>
-                    <p>
-                        <i class="fa fa-phone fa-flip-horizontal mr-1"></i> +91 9561601680
-                    </p>
-
-
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-        <div class="d-flex justify-content-around">
-            <a href="#" class="fa fa-facebook socialmedia"></a>
-            <a href="#" class="fa fa-twitter socialmedia"></a>
-            <a href="#" class="fa fa-linkedin socialmedia"></a>
-            <a href="#" class="fa fa-youtube socialmedia"></a>
-            <a href="#" class="fa fa-instagram socialmedia"></a>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-copyright text-center text-black-50 py-3">
-            &copy; <span id="current-year">2020</span> Copyright:
-            <a class="text-secondary" href="#"> Vego Pvt. Ltd.</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
     <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
-    <div class="w3-overlay w3-animate-opacity" onclick="w3_closefilter()" style="cursor:pointer" id="myOverlay"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -557,101 +920,44 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script>
-        //jQuery time
-        var current_fs, next_fs, previous_fs; //fieldsets
-        var left, opacity, scale; //fieldset properties which we will animate
-        var animating; //flag to prevent quick multi-click glitches
 
-        $(".next").click(function () {
-            if (animating) return false;
-            animating = true;
-
-            current_fs = $(this).parent();
-            next_fs = $(this).parent().next();
-
-            //activate next step on progressbar using the index of next_fs
-            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-            //show the next fieldset
-            next_fs.show();
-            //hide the current fieldset with style
-            current_fs.animate(
-                { opacity: 0 },
-                {
-                    step: function (now, mx) {
-                        //as the opacity of current_fs reduces to 0 - stored in "now"
-                        //1. scale current_fs down to 80%
-                        scale = 1 - (1 - now) * 0.2;
-                        //2. bring next_fs from the right(50%)
-                        left = now * 50 + "%";
-                        //3. increase opacity of next_fs to 1 as it moves in
-                        opacity = 1 - now;
-                        current_fs.css({
-                            transform: "scale(" + scale + ")",
-                            position: "absolute"
-                        });
-                        next_fs.css({ left: left, opacity: opacity });
-                    },
-                    duration: 800,
-                    complete: function () {
-                        current_fs.hide();
-                        animating = false;
-                    },
-                    //this comes from the custom easing plugin
-                    easing: "easeInOutBack"
-                }
-            );
-        });
-
-        $(".previous").click(function () {
-            if (animating) return false;
-            animating = true;
-
-            current_fs = $(this).parent();
-            previous_fs = $(this).parent().prev();
-
-            //de-activate current step on progressbar
-            $("#progressbar li")
-                .eq($("fieldset").index(current_fs))
-                .removeClass("active");
-
-            //show the previous fieldset
-            previous_fs.show();
-            //hide the current fieldset with style
-            current_fs.animate(
-                { opacity: 0 },
-                {
-                    step: function (now, mx) {
-                        //as the opacity of current_fs reduces to 0 - stored in "now"
-                        //1. scale previous_fs from 80% to 100%
-                        scale = 0.8 + (1 - now) * 0.2;
-                        //2. take current_fs to the right(50%) - from 0%
-                        left = (1 - now) * 50 + "%";
-                        //3. increase opacity of previous_fs to 1 as it moves in
-                        opacity = 1 - now;
-                        current_fs.css({ left: left });
-                        previous_fs.css({
-                            transform: "scale(" + scale + ")",
-                            opacity: opacity
-                        });
-                    },
-                    duration: 800,
-                    complete: function () {
-                        current_fs.hide();
-                        animating = false;
-                    },
-                    //this comes from the custom easing plugin
-                    easing: "easeInOutBack"
-                }
-            );
-        });
-
-        $(".submit").click(function () {
-            return false;
-        });
-
-    </script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
+<script>
+    function w3_open() {
+
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+        var x = document.getElementById("search");
+        x.style.display = "none";
+
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+        var x = document.getElementById("search");
+        x.style.display = "block";
+    }
+    function openLink(evt, animName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" tab-btn2", "");
+        }
+        document.getElementById(animName).style.display = "block";
+        evt.currentTarget.className += " tab-btn2";
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 5;
+        document.documentElement.scrollTop = 5;
+    }
+</script>
 
 </html>
